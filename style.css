@@ -243,7 +243,7 @@ body {
   margin-bottom: 0.75rem;
 }
 
-/* Image Gallery Styles */
+/* Image Gallery Styles - FIXED CROPPING ISSUE */
 .image-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -269,8 +269,8 @@ body {
   border-radius: 4px;
   margin-bottom: 0.75rem;
   background: var(--light-gray);
-  min-height: 200px;
-  object-fit: cover;
+  object-fit: contain;
+  max-height: 500px;
 }
 
 .caption {
