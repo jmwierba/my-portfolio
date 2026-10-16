@@ -16,6 +16,7 @@
                 <li><a href="#telescope">Telescope</a></li>
                 <li><a href="#bench">Bench</a></li>
                 <li><a href="#farm">Aquaponic Farm</a></li>
+                <li><a href="#gearbox">Gearbox</a></li>
             </ul>
         </div>
     </nav>
@@ -44,7 +45,7 @@
             <div class="about-portfolio">
                 <h3>About This Portfolio</h3>
                 <p>This portfolio aims to supplement my resume by presenting some selected projects I have developed throughout my undergraduate studies. I believe that one of the most important parts of an undergraduate degree is to participate in hands-on projects.</p>
-                <p>Throughout the last 3 years as a Mechanical and Biomedical Engineering student, I was involved with a diverse selection of projects. This portfolio highlights four projects that helped enrich my technical knowledge, refine my collaboration and teamwork skills, and bring out my passion for my degree.</p>
+                <p>Throughout the last 3 years as a Mechanical and Biomedical Engineering student, I was involved with a diverse selection of projects. This portfolio highlights five projects that helped enrich my technical knowledge, refine my collaboration and teamwork skills, and bring out my passion for my degree.</p>
                 <p>For each project, I provide an overview, important descriptions, photos, and contributions. If you have any questions about a specific project, feel free to get in touch with me by e-mail or on LinkedIn.</p>
             </div>
         </div>
@@ -329,6 +330,78 @@
                     <li>Research on plants, fish, and hydrostatics</li>
                     <li>Materials Selection</li>
                     <li>CAD Design & Prototyping (Wooden frame and fish tunnel)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="gearbox" class="section gearbox-section">
+        <div class="container">
+            <h2 class="section-title">TREADMILL GEARBOX</h2>
+
+            <div class="project-overview">
+                <h3>Overview</h3>
+                <p>For MME 3380B (Mechanical Components Design), our group designed a single-stage spur gear reducer for a low-speed rehabilitation treadmill. The gearbox converts the 2000 RPM input of a brushless DC motor into a high-torque output that drives the treadmill belt at up to 5 mph, while fitting a 12-14 in length and 8 in x 8 in cross-section envelope. The design targeted over 90% efficiency, a 20,000-mile bearing life, and stress and fatigue factors of safety above 2.5. Our final design is shown in Figures Z and AA.</p>
+            </div>
+
+            <div class="image-gallery">
+                <div class="image-item">
+                    <img src="images/v2gearbox-assembly.jpg" alt="Gearbox Assembly Drawing">
+                    <p class="caption">Fig. Z: Gearbox Assembly Drawing (Isometric, Top, Front, and Side Views)</p>
+                </div>
+                <div class="image-item">
+                    <img src="images/v2gearbox-exploded.jpg" alt="Exploded View with Bill of Materials">
+                    <p class="caption">Fig. AA: Exploded View with Bill of Materials</p>
+                </div>
+            </div>
+
+            <div class="project-details">
+                <h3>Design Considerations</h3>
+                <ul>
+                    <li><strong>Gear Set:</strong> Specified a 20-tooth pinion and 144-tooth gear (diametral pitch of 24) for a 7.2:1 reduction. The 6 in main gear matches the roller diameter, which maximizes pitch diameter and reduces tooth stress.</li>
+                    <li><strong>Motor Selection:</strong> Selected the 255-ACZI48-250 permanent magnet synchronous motor (42 Nm rated torque at 2000 RPM) to supply the required ~7.85 kW input power at 95% gearbox efficiency.</li>
+                    <li><strong>Housing & Layout:</strong> Designed a split, bolted aluminum (6061-T6) housing with two bearings per shaft and keyed gear attachments, so the assembly can be built, opened, and clearly shown in section and exploded views (Figure AB).</li>
+                    <li><strong>Materials:</strong> AISI 4340 steel for the pinion, maraging steel for the gear, and cold-drawn AISI 1045 steel for the shafts and keys, balancing strength, machinability, and cost.</li>
+                </ul>
+
+                <h4>Phase 1 Corrections</h4>
+                <p>In Phase 2, we revisited our Phase 1 calculations. We corrected the required output torque to account for the force acting on both the top and bottom sections of the belt (254.1 Nm), and recalculated the gear ratio from the required roller speed instead of the motor's rated torque. This gave a more accurate input torque, gear geometry, and motor selection.</p>
+            </div>
+
+            <div class="image-gallery">
+                <div class="image-item">
+                    <img src="images/v2gearbox-section.jpg" alt="Cross-Sectional View of Gearbox">
+                    <p class="caption">Fig. AB: Assembly Cross-Sectional View</p>
+                </div>
+                <div class="image-item">
+                    <img src="images/v2gearbox-housing.jpg" alt="Half Gearbox Housing Part Drawing">
+                    <p class="caption">Fig. AC: Part Drawing of Half Gearbox Housing</p>
+                </div>
+            </div>
+
+            <div class="project-details">
+                <h3>Analysis & Results</h3>
+                <ul>
+                    <li><strong>Gear Stress:</strong> Calculated AGMA contact and bending stresses for the pinion and gear. Contact safety factors were 3.75 (pinion) and 10.61 (gear), and bending safety factors were 2.53 (pinion) and 2.63 (gear), all above the 2.5 requirement.</li>
+                    <li><strong>Shaft Loading:</strong> Derived reaction forces from the tangential (3510 N) and radial (1278 N) gear loads, then drew shear, moment, and torque diagrams for the input and output shafts in both planes (Figure AD).</li>
+                    <li><strong>Fatigue:</strong> Applied the Marin equation to find a fully corrected endurance limit of 171 MPa. Using DE-Goodman with keyway stress concentrations, the minimum shaft diameters were 14.07 mm (input) and 23.84 mm (output); the final design uses 14.29 mm and 25 mm.</li>
+                    <li><strong>Bearings, Deflection & Keys:</strong> Checked bearing life against the 20,000-mile target (the selected bearings are oversized for the loads), calculated shaft deflection, and confirmed keyway crushing strength.</li>
+                </ul>
+
+                <div class="image-gallery">
+                    <div class="image-item wide">
+                        <img src="images/v2gearbox-diagrams.jpg" alt="Shaft Shear, Moment, and Torque Diagrams">
+                        <p class="caption">Fig. AD: Pinion (Input) Shaft Shear, Moment, and Torque Diagrams</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contributions">
+                <h3>Main Contributions (Group Size: 4)</h3>
+                <ul>
+                    <li>CAD Drawings (assembly and part drawings)</li>
+                    <li>Shear, Moment, and Torque Diagrams for the Shafts</li>
+                    <li>Fully Corrected Endurance Limit Calculations</li>
                 </ul>
             </div>
         </div>
