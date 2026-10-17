@@ -1,13 +1,10 @@
-// Smooth scrolling for navigation links
+// Smooth scroll for nav links and table of contents links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
-    e.preventDefault();
     const target = document.querySelector(this.getAttribute('href'));
     if (target) {
-      target.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   });
 });
@@ -16,11 +13,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 window.addEventListener('scroll', () => {
   let current = '';
   const sections = document.querySelectorAll('.section');
-  
+
   sections.forEach(section => {
     const sectionTop = section.offsetTop;
-    const sectionHeight = section.clientHeight;
-    if (pageYOffset >= sectionTop - 100) {
+    if (window.pageYOffset >= sectionTop - 100) {
       current = section.getAttribute('id');
     }
   });
