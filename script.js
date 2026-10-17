@@ -9,22 +9,51 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Add active class to navigation items on scroll
-window.addEventListener('scroll', () => {
+// Highlight active nav item + add shadow to navbar on scroll
+const navbar = document.querySelector('.navbar');
+const sections = document.querySelectorAll('.section');
+const navLinks = document.querySelectorAll('.nav-menu a');
+
+function onScroll() {
   let current = '';
-  const sections = document.querySelectorAll('.section');
 
   sections.forEach(section => {
-    const sectionTop = section.offsetTop;
-    if (window.pageYOffset >= sectionTop - 100) {
+    if (window.scrollY >= section.offsetTop - 140) {
       current = section.getAttribute('id');
     }
   });
 
-  document.querySelectorAll('.nav-menu a').forEach(link => {
-    link.classList.remove('active');
-    if (link.getAttribute('href') === `#${current}`) {
-      link.classList.add('active');
-    }
+  navLinks.forEach(link => {
+    link.classList.toggle('active', link.getAttribute('href') === `#${current}`);
   });
-});
+
+  navbar.classList.toggle('scrolled', window.scrollY > 10);
+}
+
+window.addEventListener('scroll', onScroll, { passive: true });
+onScroll();
+
+// Gentle fade-in for content boxes as they scroll into view
+const revealTargets = document.querySelectorAll(
+  '.contact-card, .about-portfolio, .toc-box, .project-overview, ' +
+  '.project-details, .decision-process, .contributions, .image-item'
+);
+
+if ('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.08 }
+  );
+
+  revealTargets.forEach(el => {
+    el.classList.add('reveal');
+    observer.observe(el);
+  });
+}
