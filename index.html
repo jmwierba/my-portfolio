@@ -1,22 +1,68 @@
-@@ -12,11 +12,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacqueline Wierba | Engineering Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
             <h1 class="nav-title">Jacqueline Wierba</h1>
             <ul class="nav-menu">
                 <li><a href="#profile">Profile</a></li>
                 <li><a href="#gearbox">Gearbox</a></li>
                 <li><a href="#rov">ROV</a></li>
                 <li><a href="#telescope">Telescope</a></li>
-                <li><a href="#bench">Bench</a></li>
                 <li><a href="#farm">Aquaponic Farm</a></li>
-                <li><a href="#gearbox">Gearbox</a></li>
                 <li><a href="#bench">Bench</a></li>
             </ul>
         </div>
     </nav>
-@@ -31,7 +31,18 @@ <h2 class="hero-subtitle">PORTFOLIO</h2>
+
+    <header class="hero">
+        <div class="hero-inner">
+            <div class="hero-content">
+                <h2 class="hero-small">Jacqueline's</h2>
+                <h2 class="hero-title">Engineering</h2>
+                <h2 class="hero-small">Portfolio</h2>
+            </div>
+            <div class="hero-photo">
+                <img src="images/jacqueline.jpg" alt="Photo of Jacqueline Wierba">
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+    <!-- ===================== PROFILE ===================== -->
     <section id="profile" class="section profile-section">
         <div class="container">
-            <h2 class="section-title">PROFILE</h2>
-            
+            <h2 class="section-title">Profile</h2>
+
+            <div class="profile-info">
+                <div class="contact-card">
+                    <h3>Contact Information</h3>
+                    <p><strong>Name:</strong> Jacqueline Wierba</p>
+                    <p><strong>E-Mail:</strong> <a href="mailto:jm.wierba@gmail.com">jm.wierba@gmail.com</a></p>
+                    <p><strong>Phone:</strong> (226) 506-4238</p>
+                    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jacqueline-wierba-5ab607234/" target="_blank" rel="noopener">View Profile</a></p>
+                </div>
+            </div>
+
+            <div class="about-portfolio">
+                <h3>About This Portfolio</h3>
+                <p>This portfolio aims to supplement my resume by presenting some selected projects I have developed throughout my undergraduate studies. I believe that one of the most important parts of an undergraduate degree is to participate in hands-on projects.</p>
+                <p>Throughout the last 4 years as a Mechanical Engineering student, I was involved with a diverse selection of projects. This portfolio highlights five projects that helped enrich my technical knowledge, refine my collaboration and teamwork skills, and bring out my passion for my degree.</p>
+                <p>For each project, I provide an overview, important descriptions, photos, and contributions. If you have any questions about a specific project, feel free to get in touch with me by e-mail or on LinkedIn.</p>
+            </div>
 
             <div class="toc-box">
                 <h3>Table of Contents</h3>
@@ -28,24 +74,13 @@
                     <li><a href="#bench"><span class="toc-num">5</span> Maglin Iconic Bench</a></li>
                 </ul>
             </div>
-
-            <div class="profile-info">
-                <div class="contact-card">
-                    <h3>Contact Information</h3>
-@@ -45,16 +56,88 @@ <h3>Contact Information</h3>
-            <div class="about-portfolio">
-                <h3>About This Portfolio</h3>
-                <p>This portfolio aims to supplement my resume by presenting some selected projects I have developed throughout my undergraduate studies. I believe that one of the most important parts of an undergraduate degree is to participate in hands-on projects.</p>
-                <p>Throughout the last 3 years as a Mechanical and Biomedical Engineering student, I was involved with a diverse selection of projects. This portfolio highlights five projects that helped enrich my technical knowledge, refine my collaboration and teamwork skills, and bring out my passion for my degree.</p>
-                <p>Throughout the last 4 years as a Mechanical Engineering student, I was involved with a diverse selection of projects. This portfolio highlights six projects that helped enrich my technical knowledge, refine my collaboration and teamwork skills, and bring out my passion for my degree.</p>
-                <p>For each project, I provide an overview, important descriptions, photos, and contributions. If you have any questions about a specific project, feel free to get in touch with me by e-mail or on LinkedIn.</p>
-            </div>
         </div>
     </section>
 
+    <!-- ===================== GEARBOX ===================== -->
     <section id="gearbox" class="section gearbox-section">
         <div class="container">
-            <h2 class="section-title">TREADMILL GEARBOX</h2>
+            <h2 class="section-title">Treadmill Gearbox</h2>
 
             <div class="project-overview">
                 <h3>Overview</h3>
@@ -68,7 +103,7 @@
                 <ul>
                     <li><strong>Gear Set:</strong> Specified a 20-tooth pinion and 144-tooth gear (diametral pitch of 24) for a 7.2:1 reduction. The 6 in main gear matches the roller diameter, which maximizes pitch diameter and reduces tooth stress.</li>
                     <li><strong>Motor Selection:</strong> Selected the 255-ACZI48-250 permanent magnet synchronous motor (42 Nm rated torque at 2000 RPM) to supply the required ~7.85 kW input power at 95% gearbox efficiency.</li>
-                    <li><strong>Housing & Layout:</strong> Designed a split, bolted aluminum (6061-T6) housing with two bearings per shaft and keyed gear attachments, so the assembly can be built, opened, and clearly shown in section and exploded views (Figure C).</li>
+                    <li><strong>Housing &amp; Layout:</strong> Designed a split, bolted aluminum (6061-T6) housing with two bearings per shaft and keyed gear attachments, so the assembly can be built, opened, and clearly shown in section and exploded views (Figure C).</li>
                     <li><strong>Materials:</strong> AISI 4340 steel for the pinion, maraging steel for the gear, and cold-drawn AISI 1045 steel for the shafts and keys, balancing strength, machinability, and cost.</li>
                 </ul>
 
@@ -88,12 +123,12 @@
             </div>
 
             <div class="project-details">
-                <h3>Analysis & Results</h3>
+                <h3>Analysis &amp; Results</h3>
                 <ul>
                     <li><strong>Gear Stress:</strong> Calculated AGMA contact and bending stresses for the pinion and gear. Contact safety factors were 3.75 (pinion) and 10.61 (gear), and bending safety factors were 2.53 (pinion) and 2.63 (gear), all above the 2.5 requirement.</li>
                     <li><strong>Shaft Loading:</strong> Derived reaction forces from the tangential (3510 N) and radial (1278 N) gear loads, then drew shear, moment, and torque diagrams for the input and output shafts in both planes (Figure E).</li>
                     <li><strong>Fatigue:</strong> Applied the Marin equation to find a fully corrected endurance limit of 171 MPa. Using DE-Goodman with keyway stress concentrations, the minimum shaft diameters were 14.07 mm (input) and 23.84 mm (output); the final design uses 14.29 mm and 25 mm.</li>
-                    <li><strong>Bearings, Deflection & Keys:</strong> Checked bearing life against the 20,000-mile target (the selected bearings are oversized for the loads), calculated shaft deflection, and confirmed keyway crushing strength.</li>
+                    <li><strong>Bearings, Deflection &amp; Keys:</strong> Checked bearing life against the 20,000-mile target (the selected bearings are oversized for the loads), calculated shaft deflection, and confirmed keyway crushing strength.</li>
                 </ul>
 
                 <div class="image-gallery">
@@ -115,21 +150,19 @@
         </div>
     </section>
 
+    <!-- ===================== ROV ===================== -->
     <section id="rov" class="section rov-section">
         <div class="container">
-            <h2 class="section-title">UNDERWATER ROV</h2>
-            
+            <h2 class="section-title">Underwater ROV</h2>
 
             <div class="project-overview">
                 <h3>Overview</h3>
                 <p>This project was developed for the Western Engineering Competition (WEC) in the Re-Engineering category. Our team was given a problem statement to convert a terrestrial RC vehicle into a functional underwater ROV. We successfully completed our design, report, and presentation within an allotted 6-hour time frame, earning us <strong>1st Place</strong> in our category and qualifying to represent Western University at the provincial level during the Ontario Engineering Competition (OEC).</p>
-@@ -63,43 +146,43 @@ <h3>Overview</h3>
+            </div>
+
             <div class="project-details">
                 <h3>Re-Engineered Design Considerations:</h3>
                 <ul>
-                    <li>Designed an aluminum support frame (Figure A) with protective guards and pool-noodle bumpers to provide high structural rigidity and impact resistance for internal electronics. Materials selected are cost-efficient, environmentally safe, and widely available.</li>
-                    <li>Engineered thrusters (Figure B) with waterproof motor housings featuring front-facing intake ducts and O-ring seals to improve laminar flow and maximize propulsion efficiency.</li>
-                    <li>Developed a piston-style ballast tank (Figure C), driven by a linear actuator to control displacement, allowing the ROV to achieve precise buoyancy (through a ROV mass calculation) and vertical depth control.</li>
                     <li>Designed an aluminum support frame (Figure F) with protective guards and pool-noodle bumpers to provide high structural rigidity and impact resistance for internal electronics. Materials selected are cost-efficient, environmentally safe, and widely available.</li>
                     <li>Engineered thrusters (Figure G) with waterproof motor housings featuring front-facing intake ducts and O-ring seals to improve laminar flow and maximize propulsion efficiency.</li>
                     <li>Developed a piston-style ballast tank (Figure H), driven by a linear actuator to control displacement, allowing the ROV to achieve precise buoyancy (through a ROV mass calculation) and vertical depth control.</li>
@@ -139,67 +172,70 @@
             <div class="image-gallery">
                 <div class="image-item">
                     <img src="images/v2frame.jpg" alt="Modular Structural Frame">
-                    <p class="caption">Fig. A: Modular Structural Frame</p>
                     <p class="caption">Fig. F: Modular Structural Frame</p>
                 </div>
                 <div class="image-item">
                     <img src="images/v2rovthruster.jpg" alt="High-Efficiency Thruster CAD">
-                    <p class="caption">Fig. B: High-Efficiency Thruster CAD</p>
                     <p class="caption">Fig. G: High-Efficiency Thruster CAD</p>
                 </div>
                 <div class="image-item">
                     <img src="images/v2rovballast.jpg" alt="Linear Ballast CAD">
-                    <p class="caption">Fig. C: Linear Ballast CAD</p>
                     <p class="caption">Fig. H: Linear Ballast CAD</p>
                 </div>
             </div>
 
             <div class="decision-process">
-                <h3>Decision Process & Report</h3>
+                <h3>Decision Process &amp; Report</h3>
                 <ul>
-                    <li>Conducted a structured selection process using Go/No-Go screenings (Figure D) and Weighted Decision Matrices to identify the Tamiya Super Clod Buster as the optimal RC vehicle for ROV conversion.</li>
                     <li>Conducted a structured selection process using Go/No-Go screenings (Figure I) and Weighted Decision Matrices to identify the Tamiya Super Clod Buster as the optimal RC vehicle for ROV conversion.</li>
                     <li>Performed a sensitivity analysis on design objectives (durability, modifiability, and volume) to validate vehicle selection against project constraints.</li>
-                    <li>Managed project timelines and documentation using Gantt charts (Figure E) to ensure all design phases, from concept brainstorming to final CAD assembly, were completed within competition deadlines.</li>
                     <li>Managed project timelines and documentation using Gantt charts (Figure J) to ensure all design phases, from concept brainstorming to final CAD assembly, were completed within competition deadlines.</li>
                 </ul>
 
                 <div class="image-gallery">
                     <div class="image-item">
                         <img src="images/v2gonogo.jpg" alt="Go No-Go Screenings">
-                        <p class="caption">Fig. D: Go No-Go Screenings</p>
                         <p class="caption">Fig. I: Go No-Go Screenings</p>
                     </div>
                     <div class="image-item">
                         <img src="images/v2gantt.jpg" alt="Project Gantt Chart">
-                        <p class="caption">Fig. E: Project Gantt Chart</p>
                         <p class="caption">Fig. J: Project Gantt Chart</p>
                     </div>
                 </div>
             </div>
-@@ -118,10 +201,10 @@ <h3>Main Contributions (Group Size: 4)</h3>
+
+            <div class="contributions">
+                <h3>Main Contributions (Group Size: 4)</h3>
+                <ul>
+                    <li>Group Management</li>
+                    <li>CAD Design for metal frame</li>
+                    <li>Decision Processes &amp; Report-Writing</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== TELESCOPE ===================== -->
     <section id="telescope" class="section telescope-section">
         <div class="container">
-            <h2 class="section-title">SPACE TELESCOPE</h2>
-            
+            <h2 class="section-title">Space Telescope</h2>
 
             <div class="project-overview">
                 <h3>Overview</h3>
-                <p>As provincial finalists at the Ontario Engineering Competition, our team was tasked with re-engineering critical components of the James Webb Space Telescope (JWST). We focused our modifications on the Spacecraft Bus (as illustrated in Figures F and G) across two separate challenges:</p>
                 <p>As provincial finalists at the Ontario Engineering Competition, our team was tasked with re-engineering critical components of the James Webb Space Telescope (JWST). We focused our modifications on the Spacecraft Bus (as illustrated in Figures K and L) across two separate challenges:</p>
                 <ul>
-                    <li><strong>Case 1 (Structural & Systems):</strong> A week-long intensive research and design project focused on increasing the spacecraft's operational lifespan.</li>
+                    <li><strong>Case 1 (Structural &amp; Systems):</strong> A week-long intensive research and design project focused on increasing the spacecraft's operational lifespan.</li>
                     <li><strong>Case 2 (Communications):</strong> A 6-hour project to re-engineer signal transmission architecture for deep-space suitability.</li>
-@@ -131,35 +214,35 @@ <h3>Overview</h3>
+                </ul>
+            </div>
+
             <div class="image-gallery">
                 <div class="image-item">
                     <img src="images/v2tscopebefore.jpg" alt="Current JWST Spacecraft Bus">
-                    <p class="caption">Fig. F: Current JWST Spacecraft Bus</p>
                     <p class="caption">Fig. K: Current JWST Spacecraft Bus</p>
                 </div>
                 <div class="image-item">
                     <img src="images/v2tscopeafter.jpg" alt="Re-Engineered JWST Spacecraft Bus">
-                    <p class="caption">Fig. G: Re-Engineered JWST Spacecraft Bus</p>
                     <p class="caption">Fig. L: Re-Engineered JWST Spacecraft Bus</p>
                 </div>
             </div>
@@ -208,183 +244,167 @@
                 <h3>Case 1 Modifications</h3>
                 <ul>
                     <li><strong>Material Optimization:</strong> Replaced Aluminum Honeycomb panels with High-Modulus E-CFRP (Epoxy Adhesive Carbon Fiber Reinforced Polymer) to reduce overall spacecraft mass.</li>
-                    <li><strong>Hybrid Thruster System:</strong> Replaced 8 of 12 chemical thrusters with MaSMi Hall Effect thrusters, vastly improving the JWST fuel efficiency and operational lifespan. This is shown at the base of Figures F and G.</li>
                     <li><strong>Hybrid Thruster System:</strong> Replaced 8 of 12 chemical thrusters with MaSMi Hall Effect thrusters, vastly improving the JWST fuel efficiency and operational lifespan. This is shown at the base of Figures K and L.</li>
                     <li><strong>Power Integration:</strong> Swapped traditional solar arrays for a small-scale fission reactor system to provide a power source suitable for deep-space.</li>
                 </ul>
 
                 <h4>Case 1 Methods</h4>
-                <p>Created a modified optimization equation (Figures H and I) that helped us understand the relationship between dry mass, propellant mass, thruster specific impulse, and longevity of telescope. This formula aided us in selecting components with appropriate specifications for our goals.</p>
                 <p>Created a modified optimization equation (Figures M and N) that helped us understand the relationship between dry mass, propellant mass, thruster specific impulse, and longevity of telescope. This formula aided us in selecting components with appropriate specifications for our goals.</p>
                 <p>For thrusters and power generation, mass and specific impulse were considered. Inspiration for power generation was drawn from NASA's Kilopower Reactor using Stirling Technology (KRUSTY). Ashby charts were utilized for materials selection.</p>
-                <p>Alongside an extensive decision process and failure mode analysis (Figure J), our iterations were capable of extending the JWST's lifespan by <strong>300%</strong>.</p>
                 <p>Alongside an extensive decision process and failure mode analysis (Figure O), our iterations were capable of extending the JWST's lifespan by <strong>300%</strong>.</p>
 
                 <div class="image-gallery">
                     <div class="image-item">
                         <img src="images/v2tscope-eqn.jpg" alt="Modified Telescope Longevity Equation">
-                        <p class="caption">Fig. H, I: Modified Telescope Longevity Equation and Complete Derivation</p>
                         <p class="caption">Fig. M, N: Modified Telescope Longevity Equation and Complete Derivation</p>
                     </div>
                     <div class="image-item">
                         <img src="images/v2degradation.jpg" alt="Degradation Mechanism Analysis">
-                        <p class="caption">Fig. J: Degradation Mechanism Analysis of Re-Engineered Spacecraft Bus Components</p>
                         <p class="caption">Fig. O: Degradation Mechanism Analysis of Re-Engineered Spacecraft Bus Components</p>
                     </div>
                 </div>
             </div>
-@@ -170,17 +253,17 @@ <h3>Case 2 Modifications and Methods</h3>
+
+            <div class="project-details">
+                <h3>Case 2 Modifications and Methods</h3>
+                <ul>
                     <li><strong>Laser Transmission Network:</strong> Developed an intermediate satellite constellation utilizing laser communication after the first intermediate satellite instead of traditional radio waves. This increases transmission rates and weakens attenuation over long distances.</li>
-                    <li><strong>Redundant Pathing & Risk Mitigation:</strong> Designed a multipath transmission relay system to mitigate signal interference from celestial bodies and other interferences, ensuring continuous communication between Earth and Pluto.</li>
+                    <li><strong>Redundant Pathing &amp; Risk Mitigation:</strong> Designed a multipath transmission relay system to mitigate signal interference from celestial bodies and other interferences, ensuring continuous communication between Earth and Pluto.</li>
                     <li><strong>Rapid Concept Development:</strong> Executed entire system architecture, decision processes, budget considerations, risk mitigation strategies, and a finalized report and presentation within a 6-hour competition timeframe.</li>
-                    <li><strong>Targeted Subsystem Optimization:</strong> Each intermediate satellite (D, E, and F) is optimized based on its distance from the sun (Figure M). For example, satellite F has smaller solar panels, a smaller propellant tank, and a larger power generator than satellite D to compensate for decreased solar flux and maintain power requirements for thrusters in low-light environments.</li>
                     <li><strong>Targeted Subsystem Optimization:</strong> Each intermediate satellite (D, E, and F) is optimized based on its distance from the sun (Figure R). For example, satellite F has smaller solar panels, a smaller propellant tank, and a larger power generator than satellite D to compensate for decreased solar flux and maintain power requirements for thrusters in low-light environments.</li>
                 </ul>
 
                 <div class="image-gallery">
                     <div class="image-item">
                         <img src="images/v2tscope-satellite-cad.jpg" alt="Simplified Intermediate CAD Satellite">
-                        <p class="caption">Fig. K, L: Simplified Intermediate CAD Satellite (Intermediate 'C')</p>
                         <p class="caption">Fig. P, Q: Simplified Intermediate CAD Satellite (Intermediate 'C')</p>
                     </div>
                     <div class="image-item">
                         <img src="images/v2 D E F sketch.jpg" alt="Optimized Intermediate Satellites">
-                        <p class="caption">Fig. M: Sketches of Intermediate Satellites D, E, and F, simplified to display optimized characteristics</p>
                         <p class="caption">Fig. R: Sketches of Intermediate Satellites D, E, and F, simplified to display optimized characteristics</p>
                     </div>
                 </div>
 
-@@ -215,66 +298,10 @@ <h4>Case 2:</h4>
-        </div>
-    </section>
-
-    <section id="bench" class="section bench-section">
-        <div class="container">
-            <h2 class="section-title">MAGLIN ICONIC BENCH</h2>
-            
-            <div class="project-overview">
-                <h3>Overview</h3>
-                <p>In collaboration with Maglin Site Furniture, our group engineered a sustainable solution for the 'Iconic Bench' following the endangerment of their primary material, Ipe wood. Through in-depth indexing and manufacturing analysis, we proposed Black Locust as a high-performance, wood-based replacement. Our design, illustrated in Figures N and O, ensures long-term outdoor durability while adhering to modern environmental compliance and ethical sourcing standards.</p>
-            </div>
-
-            <div class="image-gallery">
-                <div class="image-item">
-                    <img src="images/v2bench-cad.jpg" alt="CAD Model of Maglin Iconic Backless Bench">
-                    <p class="caption">Fig. N: CAD Model of Maglin Iconic Backless Bench</p>
-                </div>
-                <div class="image-item">
-                    <img src="images/v2bench-sketch.jpg" alt="Drawing of Maglin Iconic Backless Bench">
-                    <p class="caption">Fig. O: Drawing of Maglin Iconic Backless Bench</p>
-                </div>
-            </div>
-
-            <div class="project-details">
-                <h3>Methods</h3>
-                <ul>
-                    <li>Utilized a systematic screening process, including Go/No-Go charts and Pugh matrices (Figure P), to identify a sustainable alternative to endangered Ipe wood for outdoor furniture. Screening process for both materials selection and manufacturing processes were utilized.</li>
-                    <li>Used Ashby Charts (Figure Q) to compare Young's Modulus, yield strength, and density across various North American hardwoods and engineered lumbers.</li>
-                    <li>Selected Thermally Modified Black Locust as an optimal material due to its high Janka hardness, exceptional decay resistance, and 50-year service life without the need for chemical preservatives.</li>
-                    <li>Tested for failure modes such as thermal cycling (Figure R), distributed loads due to heavy snowfall, and bending, using SolidWorks FEA Simulations.</li>
-                </ul>
-
+                <h4>Communication Architecture</h4>
                 <div class="image-gallery">
-                    <div class="image-item">
-                        <img src="images/v2material-decision-matrix.jpg" alt="Material Pugh Matrix">
-                        <p class="caption">Fig. P: Material Pugh Matrix</p>
+                    <div class="image-item wide">
+                        <img src="images/v2no-interferance.jpg" alt="Singular Intermediate Satellite System">
+                        <p class="caption">Singular Intermediate Satellite System: No Interference</p>
                     </div>
-                    <div class="image-item">
-                        <img src="images/v2ashbychart.jpg" alt="Ashby Chart">
-                        <p class="caption">Fig. Q: Ashby Chart of Specific Young's Modulus vs. Specific Strength</p>
-                    </div>
-                    <div class="image-item">
-                        <img src="images/v2bench-FEA.jpg" alt="Thermal Cycle Simulation">
-                        <p class="caption">Fig. R: Full Thermal Cycle Displacement Simulation Result of Black Locust</p>
+                    <div class="image-item wide">
+                        <img src="images/v2 multiple.jpg" alt="Multiple Path System">
+                        <p class="caption">Interference Mitigation with Various Pathways: Scalability</p>
                     </div>
                 </div>
             </div>
 
             <div class="contributions">
-                <h3>Main Contributions (Group Size: 4)</h3>
+                <h3>Main Contributions (Group Size: 2)</h3>
+                <h4>Case 1:</h4>
                 <ul>
-                    <li>Finite Element Analysis Testing</li>
-                    <li>Materials Selection Research</li>
-                    <li>Final Report Writing</li>
+                    <li>Optimization Calculations</li>
+                    <li>Materials Research</li>
+                    <li>Decision Process and Failure Modes Research and Calculations</li>
+                </ul>
+                <h4>Case 2:</h4>
+                <ul>
+                    <li>General Research</li>
+                    <li>Decision Process and Calculations</li>
+                    <li>Satellite CAD</li>
                 </ul>
             </div>
         </div>
     </section>
 
+    <!-- ===================== AQUAPONIC FARM ===================== -->
     <section id="farm" class="section farm-section">
         <div class="container">
-            <h2 class="section-title">AQUAPONIC FARM</h2>
-            
+            <h2 class="section-title">Aquaponic Farm</h2>
 
             <div class="project-overview">
                 <h3>Overview</h3>
                 <p>As a member of Engineers Without Borders (Western Chapter), I am part of a multi-disciplinary team designing and building a sustainable Aquaponic Farm. Since September 2024, we have progressed through several design iterations of our project, and are constantly modifying and improving its design. This project is currently in the active fabrication phase, moving from digital twin concepts to a physical, working system.</p>
-@@ -335,73 +362,57 @@ <h3>Main Contributions (Group Size: 6)</h3>
-        </div>
-    </section>
+            </div>
 
-    <section id="gearbox" class="section gearbox-section">
-    <section id="bench" class="section bench-section">
-        <div class="container">
-            <h2 class="section-title">TREADMILL GEARBOX</h2>
-            <h2 class="section-title">MAGLIN ICONIC BENCH</h2>
-
-            <div class="project-overview">
-                <h3>Overview</h3>
-                <p>For MME 3380B (Mechanical Components Design), our group designed a single-stage spur gear reducer for a low-speed rehabilitation treadmill. The gearbox converts the 2000 RPM input of a brushless DC motor into a high-torque output that drives the treadmill belt at up to 5 mph, while fitting a 12-14 in length and 8 in x 8 in cross-section envelope. The design targeted over 90% efficiency, a 20,000-mile bearing life, and stress and fatigue factors of safety above 2.5. Our final design is shown in Figures Z and AA.</p>
+            <div class="project-details">
+                <h3>Proposal &amp; Early Stages</h3>
+                <p>Guided by the core mission of Engineers Without Borders, this project focuses on food security and sustainable infrastructure. Our primary goal was to design an accessible, low-cost aquaponic system that could be constructed using standard workshop tools and readily available materials like PVC and pine. This project serves as a practical opportunity to mentor engineers in hands-on fabrication, moving from conceptual ideation sketches (Figures S and T) to a scalable and structural design.</p>
             </div>
 
             <div class="image-gallery">
                 <div class="image-item">
-                    <img src="images/v2gearbox-assembly.jpg" alt="Gearbox Assembly Drawing">
-                    <p class="caption">Fig. Z: Gearbox Assembly Drawing (Isometric, Top, Front, and Side Views)</p>
+                    <img src="images/v2farm-sketch-1.jpg" alt="1st Ideation Sketch">
+                    <p class="caption">Fig. S: 1st Ideation Sketch of Aquaponic Farm</p>
                 </div>
                 <div class="image-item">
-                    <img src="images/v2gearbox-exploded.jpg" alt="Exploded View with Bill of Materials">
-                    <p class="caption">Fig. AA: Exploded View with Bill of Materials</p>
+                    <img src="images/v2farm-sketch-2.jpg" alt="2nd Ideation Sketch">
+                    <p class="caption">Fig. T: 2nd Ideation Sketch of Aquaponic Farm with simple pipe system</p>
                 </div>
             </div>
 
             <div class="project-details">
-                <h3>Design Considerations</h3>
+                <h3>Current &amp; Future Steps</h3>
                 <ul>
-                    <li><strong>Gear Set:</strong> Specified a 20-tooth pinion and 144-tooth gear (diametral pitch of 24) for a 7.2:1 reduction. The 6 in main gear matches the roller diameter, which maximizes pitch diameter and reduces tooth stress.</li>
-                    <li><strong>Motor Selection:</strong> Selected the 255-ACZI48-250 permanent magnet synchronous motor (42 Nm rated torque at 2000 RPM) to supply the required ~7.85 kW input power at 95% gearbox efficiency.</li>
-                    <li><strong>Housing & Layout:</strong> Designed a split, bolted aluminum (6061-T6) housing with two bearings per shaft and keyed gear attachments, so the assembly can be built, opened, and clearly shown in section and exploded views (Figure AB).</li>
-                    <li><strong>Materials:</strong> AISI 4340 steel for the pinion, maraging steel for the gear, and cold-drawn AISI 1045 steel for the shafts and keys, balancing strength, machinability, and cost.</li>
+                    <li><strong>Fish Enrichment &amp; Structural Design:</strong> Designed and fabricated a custom "fish tunnel" to improve the tank's internal architecture. This component was first modeled in SolidWorks (Figure X) and then integrated into the physical tank (Figure Y). Our structural design, first modeled on SolidWorks (Figures U and V), is shown constructed in Figure W.</li>
+                    <li><strong>Future Iterations:</strong> Developing a real-time monitoring system using LabVIEW to track pH levels, water temperature, and nitrate concentrations. Creating long-term plans for fish, plant, and tank maintenance.</li>
                 </ul>
 
-                <h4>Phase 1 Corrections</h4>
-                <p>In Phase 2, we revisited our Phase 1 calculations. We corrected the required output torque to account for the force acting on both the top and bottom sections of the belt (254.1 Nm), and recalculated the gear ratio from the required roller speed instead of the motor's rated torque. This gave a more accurate input torque, gear geometry, and motor selection.</p>
+                <div class="image-gallery">
+                    <div class="image-item">
+                        <img src="images/v2woodframe-farm-cad.jpg" alt="CAD of Wooden Frame">
+                        <p class="caption">Fig. U, V: CAD of Wooden Frame of 2-Tier Farm</p>
+                    </div>
+                    <div class="image-item">
+                        <img src="images/v2-constructedwoodenframe.jpg" alt="Constructed Wooden Frame">
+                        <p class="caption">Fig. W: Constructed Wooden Frame</p>
+                    </div>
+                    <div class="image-item">
+                        <img src="images/v2fishtunnelcad.jpg" alt="CAD of Fish Tunnel">
+                        <p class="caption">Fig. X: CAD of Fish Tunnel</p>
+                    </div>
+                    <div class="image-item">
+                        <img src="images/v2tunnelintank.jpg" alt="Fish Tunnel in Tank">
+                        <p class="caption">Fig. Y: Fish Tunnel, printed with PETG, in tank</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contributions">
+                <h3>Main Contributions (Group Size: 6)</h3>
+                <ul>
+                    <li>Woodworking</li>
+                    <li>Research on plants, fish, and hydrostatics</li>
+                    <li>Materials Selection</li>
+                    <li>CAD Design &amp; Prototyping (Wooden frame and fish tunnel)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== BENCH ===================== -->
+    <section id="bench" class="section bench-section">
+        <div class="container">
+            <h2 class="section-title">Maglin Iconic Bench</h2>
+
+            <div class="project-overview">
+                <h3>Overview</h3>
                 <p>In collaboration with Maglin Site Furniture, our group engineered a sustainable solution for the 'Iconic Bench' following the endangerment of their primary material, Ipe wood. Through in-depth indexing and manufacturing analysis, we proposed Black Locust as a high-performance, wood-based replacement. Our design, illustrated in Figures Z and AA, ensures long-term outdoor durability while adhering to modern environmental compliance and ethical sourcing standards.</p>
             </div>
 
             <div class="image-gallery">
                 <div class="image-item">
-                    <img src="images/v2gearbox-section.jpg" alt="Cross-Sectional View of Gearbox">
-                    <p class="caption">Fig. AB: Assembly Cross-Sectional View</p>
                     <img src="images/v2bench-cad.jpg" alt="CAD Model of Maglin Iconic Backless Bench">
                     <p class="caption">Fig. Z: CAD Model of Maglin Iconic Backless Bench</p>
                 </div>
                 <div class="image-item">
-                    <img src="images/v2gearbox-housing.jpg" alt="Half Gearbox Housing Part Drawing">
-                    <p class="caption">Fig. AC: Part Drawing of Half Gearbox Housing</p>
                     <img src="images/v2bench-sketch.jpg" alt="Drawing of Maglin Iconic Backless Bench">
                     <p class="caption">Fig. AA: Drawing of Maglin Iconic Backless Bench</p>
                 </div>
             </div>
 
             <div class="project-details">
-                <h3>Analysis & Results</h3>
                 <h3>Methods</h3>
                 <ul>
-                    <li><strong>Gear Stress:</strong> Calculated AGMA contact and bending stresses for the pinion and gear. Contact safety factors were 3.75 (pinion) and 10.61 (gear), and bending safety factors were 2.53 (pinion) and 2.63 (gear), all above the 2.5 requirement.</li>
-                    <li><strong>Shaft Loading:</strong> Derived reaction forces from the tangential (3510 N) and radial (1278 N) gear loads, then drew shear, moment, and torque diagrams for the input and output shafts in both planes (Figure AD).</li>
-                    <li><strong>Fatigue:</strong> Applied the Marin equation to find a fully corrected endurance limit of 171 MPa. Using DE-Goodman with keyway stress concentrations, the minimum shaft diameters were 14.07 mm (input) and 23.84 mm (output); the final design uses 14.29 mm and 25 mm.</li>
-                    <li><strong>Bearings, Deflection & Keys:</strong> Checked bearing life against the 20,000-mile target (the selected bearings are oversized for the loads), calculated shaft deflection, and confirmed keyway crushing strength.</li>
                     <li>Utilized a systematic screening process, including Go/No-Go charts and Pugh matrices (Figure AB), to identify a sustainable alternative to endangered Ipe wood for outdoor furniture. Screening process for both materials selection and manufacturing processes were utilized.</li>
                     <li>Used Ashby Charts (Figure AC) to compare Young's Modulus, yield strength, and density across various North American hardwoods and engineered lumbers.</li>
                     <li>Selected Thermally Modified Black Locust as an optimal material due to its high Janka hardness, exceptional decay resistance, and 50-year service life without the need for chemical preservatives.</li>
@@ -392,9 +412,6 @@
                 </ul>
 
                 <div class="image-gallery">
-                    <div class="image-item wide">
-                        <img src="images/v2gearbox-diagrams.jpg" alt="Shaft Shear, Moment, and Torque Diagrams">
-                        <p class="caption">Fig. AD: Pinion (Input) Shaft Shear, Moment, and Torque Diagrams</p>
                     <div class="image-item">
                         <img src="images/v2material-decision-matrix.jpg" alt="Material Pugh Matrix">
                         <p class="caption">Fig. AB: Material Pugh Matrix</p>
@@ -413,14 +430,23 @@
             <div class="contributions">
                 <h3>Main Contributions (Group Size: 4)</h3>
                 <ul>
-                    <li>CAD Drawings (assembly and part drawings)</li>
-                    <li>Shear, Moment, and Torque Diagrams for the Shafts</li>
-                    <li>Fully Corrected Endurance Limit Calculations</li>
                     <li>Finite Element Analysis Testing</li>
                     <li>Materials Selection Research</li>
                     <li>Final Report Writing</li>
                 </ul>
             </div>
         </div>
+    </section>
 
+    </main>
 
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Jacqueline Wierba | Engineering Portfolio</p>
+            <p><a href="mailto:jm.wierba@gmail.com">jm.wierba@gmail.com</a> | <a href="https://www.linkedin.com/in/jacqueline-wierba-5ab607234/" target="_blank" rel="noopener">LinkedIn</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
