@@ -57,3 +57,17 @@ if ('IntersectionObserver' in window) {
     observer.observe(el);
   });
 }
+// Back-to-top button
+const backToTop = document.getElementById('backToTop');
+
+window.addEventListener(
+  'scroll',
+  () => {
+    backToTop.classList.toggle('show', window.scrollY > 500);
+  },
+  { passive: true }
+);
+
+backToTop.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
